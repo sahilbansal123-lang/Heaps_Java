@@ -18,6 +18,7 @@ public class Insertion {
                 arr.set(x, arr.get(par)); // x index pr par index ke element ko add
                 arr.set(par, temp);       // par ke index pr x ke index ke element ko add
 
+                // update the pointers for loop to be continued
                 x = par;
                 par = (x - 1) / 2;
             }
