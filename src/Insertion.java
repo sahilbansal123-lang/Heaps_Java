@@ -17,6 +17,9 @@ public class Insertion {
                 int temp = arr.get(x);
                 arr.set(x, arr.get(par)); // x index pr par index ke element ko add
                 arr.set(par, temp);       // par ke index pr x ke index ke element ko add
+
+                x = par;
+                par = (x - 1) / 2;
             }
         }
 
