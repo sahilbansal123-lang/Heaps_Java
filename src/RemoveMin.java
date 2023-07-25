@@ -28,7 +28,7 @@ public class RemoveMin {
             }
         }
 
-        public void remove() {
+        public int remove() {
 
             int data = arr.get(0);
 
@@ -41,6 +41,9 @@ public class RemoveMin {
             arr.remove(arr.size()-1);
 
             // heapify
+            heapify(0);
+
+            return data;
         }
     }
 
