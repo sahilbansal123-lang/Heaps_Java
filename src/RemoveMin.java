@@ -34,7 +34,7 @@ public class RemoveMin {
 
             // step1 --> swap first and last node
             int temp = arr.get(0);
-            arr.set(0, arr.size()-1);
+            arr.set(0, arr.get(arr.size()-1));
             arr.set(arr.size()-1, temp);
 
             // step2 --> remove

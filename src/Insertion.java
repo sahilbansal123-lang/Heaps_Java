@@ -2,7 +2,8 @@ import java.util.ArrayList;
 
 public class Insertion {
 
-
+    static class Heap {
+        ArrayList<Integer> arr = new ArrayList<>();
 
         // Time Complexity = O(log n)
         public void insert(int data) {
