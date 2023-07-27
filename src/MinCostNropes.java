@@ -20,7 +20,7 @@ public class MinCostNropes {
     }
 
     public static void main(String[] args) {
-        int[] ropes = {2, 3, 4, 6};
+        int[] ropes = {2, 4, 3, 6};
         minCost(ropes);
     }
 }
