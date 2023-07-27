@@ -2,10 +2,10 @@ import java.util.PriorityQueue;
 
 public class MinCostNropes {
 
-    public static void minCost(int ropes[]) {
+    public static void minCost(int[] ropes) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
-        for (int i = 0; i < ropes.length; i++) {
-            pq.add(ropes[i]);
+        for (int rope : ropes) {
+            pq.add(rope);
         }
 
         int cost = 0;
@@ -20,7 +20,7 @@ public class MinCostNropes {
     }
 
     public static void main(String[] args) {
-        int ropes[] = {2, 3, 4, 6};
+        int[] ropes = {2, 3, 4, 6};
         minCost(ropes);
     }
 }
